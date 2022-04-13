@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashish's gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        /* CSS Reset */
+        margin: 0px;
+        padding: 0px;
+        /* to set background image */
+        background: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Fitness-hd-wallpapers-for-mobile.jpg");
+        /* background: url("https://th.bing.com/th/id/R.6c724c8d3ad9bef1cc117c650f29b2f6?rik=oj%2b4axVdfUOjKA&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2%2fRunner-PNG-Picture.png&ehk=M5jmOWmGIqqq57Hp%2bcj2E7ezGbqPfgQUDYDo4tW16MQ%3d&risl=&pid=ImgRaw&r=0"); */
+        background-size: 89%;
+        color: azure;
+        font-family: "Baloo Bhai 2", cursive;
+        /* font-family: 'Lobster', cursive; */
+      }
+      .left {
+        /* border:2px solid rgb(67, 150, 206); */
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+      }
+      .mid {
+        /* border:2px solid rgb(96, 119, 13); */
+        display: block;
+        width: 40%;
+        margin: 29px auto;
+      }
+      .right {
+        /* border:2px solid rgb(231, 187, 43); */
+        display: inline-block;
+        position: absolute;
+        right: 43px;
+        top: 33px;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 25px;
+      }
+      .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 34px 23px;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        color: rgb(78, 92, 107);
+        text-decoration: underline;
+      }
+      .left img {
+        width: 136px;
+        /* invert funtion interts black into white and white into black */
+        filter: invert(100%);
+      }
+      .left div {
+        text-align: center;
+        line-height: 15px;
+        font-size: 25px;
+      }
+      .btn {
+        margin: 0px 9px;
+        color: whitesmoke;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: "Baloo Bhai 2", cursive;
+      }
+      .btn:hover {
+        color: rgb(78, 92, 107);
+      }
+      .container {
+        border: 2px solid white;
+        margin: 149px 133px;
+        padding: 75px;
+        width: 31%;
+        border-radius: 28px;
+        /* left: 65px;
+            /* left:65px; */
+      }
+      .form-group input {
+        font-family: "Baloo Bhai 2", cursive;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      .container button {
+        display: block;
+        width: 74%;
+        margin: 28px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">
+        <!-- left box for logo -->
+        <img src="logo.png" alt="cannot load" />
+        <div>Ashi Fitness</div>
+      </div>
+      <div class="mid">
+        <!-- mid box for navigation -->
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <!-- right box for buttoms -->
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best Gym in town</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your locality" />
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your E-mail ID" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone NUmber" />
+          </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
